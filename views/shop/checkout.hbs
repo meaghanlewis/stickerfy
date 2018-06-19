@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+
+
+        <h1>Checkout</h1>
+        <h4>Total: ${{total}}</h4>
+        <h4>Thanks for your order!</h4>
+        <div id="charge-error" class="alert alert-danger {{#if noError}}hidden{{/if}}">
+            {{errMsg}}
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script type="text/javascript" src="javascripts/checkout.js"></script>
