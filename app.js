@@ -15,7 +15,7 @@ var routes = require('./routes/index');
 
 var app = express();
 
-mongoose.connect(process.env.MONGO_DB_URI);
+mongoose.connect(process.env.MONGODB_URI);
 
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));

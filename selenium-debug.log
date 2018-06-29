@@ -1,0 +1,7 @@
+19:23:39.875 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.11.0', revision: 'e59cfb3'
+19:23:39.876 INFO [GridLauncherV3$1.launch] - Launching a standalone Selenium Server on port 4444
+2018-06-27 19:23:40.005:INFO::main: Logging initialized @517ms to org.seleniumhq.jetty9.util.log.StdErrLog
+19:23:40.231 INFO [SeleniumServer.boot] - Welcome to Selenium for Workgroups....
+19:23:40.231 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+19:23:40.614 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptSslCerts: true, browserName: firefox, javascriptEnabled: true, marionette: true, name: Checkout Test}
+19:23:40.616 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
