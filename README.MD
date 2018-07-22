@@ -1,38 +1,33 @@
-# Stickerfy - Carrinho de Compras - NodeJS/Express
+# Stickerfy
 
 
 ### Run Locally on Your Machine
-You need Node, NPM and MongoDB properly installed.
+You need Node, NPM and MongoDB properly installed. To get started:
 
-Clone this repository
+1. Clone this repository
 ``` shell
-    git clone https://github.com/brenohq/nodejs-shopping-cart.git
+    git clone https://github.com/meaghanlewis/stickerfy.git
 ```
-Setup the environment variables replacing <MONGODB-PORT> with your mongodb port, usually is 27017.
+2. Setup the environment variable for the MongoDB URI
 ``` shell
-    export MONGO_DB_URI=mongodb://localhost:<MONGODB-PORT>/shopping
+    export MONGODB_URI=mongodb://localhost:27017/shopping
 ```
-Install dependencies
+3. Install dependencies
 ``` shell
     npm install
 ```
 
-With your mongod service running, this will populate shopping database
+4. Start up MongoDB
+``` shell
+    mongod
+```
+
+5. Populate shopping database
 ``` shell
     node seed/product-seeder.js
 ```
-This will start dev server at http://localhost:3000 with Nodemon.
+Once the project is setup, start the dev server with Nodemon.
 ``` shell
     npm run dev
 ```
-
-### Tests
-``` shell
-    npm test
-```
-
-### Technologies
-###### Back-end
-NodeJS, Express, MongoDB, Mongoose.
-###### Fron-end
-Handlebars and Bootstrap.
+Server will start at: http://localhost:3000

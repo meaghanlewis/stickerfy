@@ -1,5 +1,5 @@
 module.exports = {
-  'Shopping cart' : function (browser) {
+  'Test checkout workflow' : function (browser) {
     browser
       .url('https://stickerfy.herokuapp.com/')
       .waitForElementVisible('body', 1000)

@@ -20,7 +20,7 @@ describe('Shopping cart', function() {
 
     it('should add two numbers', function() {
       cart.add(product, product.id);
-      assert.equal(cart.totalPrice, 5)
+      assert.equal(cart.totalPrice, 5);
     });
 
     it('should remove one', function() {

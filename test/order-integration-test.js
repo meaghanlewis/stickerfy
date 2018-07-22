@@ -31,3 +31,5 @@ describe('Shopping cart', function() {
   });
 
 });
+
+});
