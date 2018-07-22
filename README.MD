@@ -2,8 +2,9 @@
 
 
 ### Run Locally on Your Machine
-You need Node, NPM and MongoDB properly installed. To get started:
+You need [Node](https://nodejs.org/en/download/), NPM (which is bundled with Node) and [MongoDB](https://docs.mongodb.com/manual/installation/) properly installed before being able to run this application.
 
+To get started:
 1. Clone this repository
 ``` shell
     git clone https://github.com/meaghanlewis/stickerfy.git
