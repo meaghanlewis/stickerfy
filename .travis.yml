@@ -3,4 +3,4 @@ node_js:
   - "8"
 services: mongodb
 env:
-  - MONGODB_URI=mongodb://root:root@ds137220.mlab.com:37220/shoppingcart-db
+  - MONGODB_URI=mongodb://heroku_4wbw2kcq:bc04qj7q81obka3vhl83nmlemi@ds163510.mlab.com:63510/shoppingcart-db
