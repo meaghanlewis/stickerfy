@@ -32,3 +32,9 @@ Once the project is setup, start the dev server with Nodemon.
     npm run dev
 ```
 Server will start at: http://localhost:3000
+
+### Run mocha tests
+
+Run all mocha tests: `mocha --recursive`
+
+To run a single test: `mocha --recursive test/unit/cart.spec.js`
