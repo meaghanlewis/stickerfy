@@ -32,7 +32,14 @@ Server will start at: http://localhost:3000
 
 ### Run mocha tests
 
-To run the:
-- unit tests: `npm run unit-test`
-- integration tests: `npm run integration-test`
-- ui tests: `npm run ui-test`
+#### Unit tests
+- to run: `npm run unit-test`
+- do not require the dev server running
+
+#### Integration tests
+- to run: `npm run integration-test`
+- start up the dev server when running
+
+#### UI tests
+- to run: `npm run ui-test`
+- note: dev server must be started by running `npm run dev` beforehand
