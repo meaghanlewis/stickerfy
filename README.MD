@@ -9,21 +9,18 @@ To get started:
 ``` shell
     git clone https://github.com/meaghanlewis/stickerfy.git
 ```
-2. Setup the environment variable for the MongoDB URI
-``` shell
-    export MONGODB_URI=mongodb://localhost:27017/shopping
-```
-3. Install dependencies
+
+2. Install dependencies
 ``` shell
     npm install
 ```
 
-4. Start up MongoDB
+3. Start up MongoDB
 ``` shell
     mongod
 ```
 
-5. Populate shopping database
+4. Populate shopping database
 ``` shell
     node seed/product-seeder.js
 ```
@@ -36,6 +33,6 @@ Server will start at: http://localhost:3000
 ### Run mocha tests
 
 To run the:
-- unit tests: `mocha --recursive test/unit/cart.spec.js`
-- integration tests: ``
-- ui tests: `mocha --recursive --timeout 10000 test/ui/checkout.spec.js`
+- unit tests: `npm run unit-test`
+- integration tests: `npm run integration-test`
+- ui tests: `npm run ui-test`

@@ -4,7 +4,10 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
-    "test": "jasmine"
+    "test": "mocha --recursive",
+    "unit-test": "mocha --recursive test/unit/cart.spec.js",
+    "integration-test": "mocha --recursive test/integration/order.spec.js",
+    "ui-test": "mocha --recursive --timeout 10000 test/ui/checkout.spec.js"
   },
   "engines": {
     "node": "7.2.1"
