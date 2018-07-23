@@ -8,7 +8,7 @@ describe('Checkout workflow', function() {
     driver = await new Builder().forBrowser('chrome').build();
   });
 
-  it('should add a sticker to the cart and checkout', async function() {
+  it('adds a sticker to the cart and checkout', async function() {
     await driver.get('http://localhost:3000');
     await driver.wait(until.titleIs('Stickerfy'), 5000);
     await driver.findElement(By.className('btn-success')).click();

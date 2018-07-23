@@ -10,10 +10,9 @@ let should = chai.should();
 
 chai.use(chaiHttp);
 
-var assert = require('assert');
 describe('Shopping cart', function() {
 
-  describe('test suite', () => {
+  describe('order test suite', () => {
 
     beforeEach(() => {
       cart = new Cart({});
@@ -24,14 +23,13 @@ describe('Shopping cart', function() {
       cart.add(product, product.id);
     });
 
-    it('should checkout an order', function() {
+    it('completes an order', function() {
       chai.request(app)
       .get('/checkout')
       .end((err, res) => {
-                assert.equal(res.statu, 200);
-                res.should.have.status(200000);
-                res.body.should.be.a('array');
-                res.body.length.should.be.eql(0);
+        res.should.have.status(200);
+        res.body.should.be.a('array');
+        res.body.length.should.be.eql(1);
       done();
     });
   });
