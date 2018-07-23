@@ -37,5 +37,5 @@ Server will start at: http://localhost:3000
 
 To run the:
 - unit tests: `mocha --recursive test/unit/cart.spec.js`
-- integration tests: ``
-- ui tests: `mocha --recursive --timeout 10000 test/ui/checkout.spec.js`
+- integration tests: `mocha --recursive test/integration/order.spec.js`
+- UI tests (written with the help of [selenium-webdriver](https://seleniumhq.github.io/selenium/docs/api/javascript/index.html): `mocha --recursive --timeout 10000 test/ui/checkout.spec.js`
