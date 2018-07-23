@@ -96,7 +96,7 @@ router.post('/checkout', function(req, res, next) {
     description: "Test Charge"
   }, function(err, charge) {
     if (err) {
-      req.flash('error', 'Não conseguimos finalizar sua compra!');
+      req.flash('error', 'Cannot complete charge');
       return res.redirect('/checkout');
     }
     var order = new Order({
@@ -106,7 +106,7 @@ router.post('/checkout', function(req, res, next) {
       paymentId: charge.id
     });
     order.save(function(err, result) {
-      req.flash('success', 'Compra realizada com sucesso!');
+      req.flash('success', 'Purchase successful!');
       req.session.cart = null;
       res.redirect('/');
     });

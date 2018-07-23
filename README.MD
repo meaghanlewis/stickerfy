@@ -35,6 +35,7 @@ Server will start at: http://localhost:3000
 
 ### Run mocha tests
 
-Run all mocha tests: `mocha --recursive`
-
-To run a single test: `mocha --recursive test/unit/cart.spec.js`
+To run the:
+- unit tests: `mocha --recursive test/unit/cart.spec.js`
+- integration tests: ``
+- ui tests: `mocha --recursive --timeout 10000 test/ui/checkout.spec.js`
