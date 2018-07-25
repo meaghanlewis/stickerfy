@@ -6,7 +6,7 @@
     "dev": "nodemon ./bin/www",
     "test": "mocha --recursive test/unit/cart.spec.js test/integration/order.spec.js",
     "unit-test": "mocha --recursive test/unit/cart.spec.js",
-    "integration-test": "mocha --recursive test/integration/order.spec.js",
+    "integration-test": "mocha --recursive --exit test/integration/order.spec.js",
     "ui-test": "mocha --recursive --timeout 10000 test/ui/checkout.spec.js",
     "test-coverage": "istanbul cover test/unit/cart.spec.js test/integration/order.spec.js"
   },
@@ -17,6 +17,7 @@
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "~1.13.2",
     "chai-http": "^4.0.0",
+    "chromedriver": "^2.40.0",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^1.2.0",
     "cookie-parser": "~1.3.5",
@@ -27,7 +28,6 @@
     "express-session": "^1.13.0",
     "express-validator": "^2.20.5",
     "hbs": "~3.1.0",
-    "mocha": "^5.2.0",
     "mongoose": "^4.4.16",
     "morgan": "~1.6.1",
     "passport-local": "^1.0.0",
@@ -37,6 +37,11 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "karma": "^2.0.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-requirejs": "^1.1.0",
+    "mocha": "^5.2.0",
     "mocha-mongoose": "^1.2.0",
     "nodemon": "^1.11.0"
   }

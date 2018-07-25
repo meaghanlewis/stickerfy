@@ -10,7 +10,7 @@ let should = chai.should();
 
 chai.use(chaiHttp);
 
-describe('Shopping cart', function() {
+describe('Shopping cart', () => {
 
   describe('order test suite', () => {
 
@@ -20,16 +20,14 @@ describe('Shopping cart', function() {
         "imagePath": "https://buildahead.com/wp-content/uploads/2017/02/happy-emoji-smaller.png",
         "title": "Happy",
         "price":5});
-      cart.add(product, product.id);
     });
 
-    it('completes an order', function() {
+
+    it('completes an order', (done) => {
       chai.request(app)
       .get('/checkout')
       .end((err, res) => {
         res.should.have.status(200);
-        res.body.should.be.a('array');
-        res.body.length.should.be.eql(1);
       done();
     });
   });
