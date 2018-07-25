@@ -1,6 +1,6 @@
 require('chromedriver');
 const assert = require('assert');
-const {Builder, By, Key, until} = require('selenium-webdriver');
+const {Builder, By} = require('selenium-webdriver');
 
 describe('Checkout workflow', function() {
   let driver;
