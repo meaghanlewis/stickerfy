@@ -1,6 +1,6 @@
 {
   "name": "shopping-cart",
-  "version": "0.0.2",
+  "version": "1.0",
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
@@ -11,7 +11,7 @@
     "test-coverage": "istanbul cover test/unit/cart.spec.js test/integration/order.spec.js"
   },
   "engines": {
-    "node": "7.2.1"
+    "node": "8.11.3"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
