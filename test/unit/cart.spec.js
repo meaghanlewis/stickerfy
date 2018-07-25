@@ -7,7 +7,7 @@ let product;
 
 describe('Shopping cart', function() {
 
-  describe('test suite', () => {
+  describe('shopping cart model', () => {
 
     beforeEach(() => {
       cart = new Cart({});
