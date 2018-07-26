@@ -7,13 +7,14 @@ let product;
 
 describe('Shopping cart', function() {
 
-  describe('test suite', () => {
+  describe('shopping cart model', () => {
 
     beforeEach(() => {
       cart = new Cart({});
       product = new Product({
         "imagePath": "https://buildahead.com/wp-content/uploads/2017/02/happy-emoji-smaller.png",
         "title": "Happy",
+        "description": "Happy",
         "price":5});
     });
 
