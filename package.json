@@ -8,7 +8,7 @@
     "unit-test": "mocha --recursive test/unit/cart.spec.js",
     "integration-test": "mocha --recursive --exit test/integration/order.spec.js",
     "ui-test": "mocha --recursive --timeout 10000 test/ui/checkout.spec.js",
-    "coverage": "nyc mocha --recursive --exit test/unit/cart.spec.js test/integration/order.spec.js"
+    "test-coverage": "nyc mocha --recursive --exit test/unit/cart.spec.js test/integration/order.spec.js"
   },
   "engines": {
     "node": "8.11.3"
