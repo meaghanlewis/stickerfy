@@ -15,7 +15,7 @@ var routes = require('./routes/index');
 
 var app = express();
 
-mongoose.connect('mongodb://localhost:27017/shopping', { useMongoClient: true });
+mongoose.connect('mongodb://localhost:27017/shopping', { useNewUrlParser: true });
 
 
 // view engine setup
