@@ -2,9 +2,11 @@
 
 
 ### Run the application locally
+
+#### Prerequisites
 You need [Node](https://nodejs.org/en/download/), [NPM](https://www.npmjs.com/get-npm) (which is bundled with Node) and [MongoDB](https://docs.mongodb.com/manual/installation/#mongodb-community-edition) properly installed before being able to run this application.
 
-To get started:
+#### To get started:
 1. Clone this repository
 ``` shell
     git clone https://github.com/meaghanlewis/stickerfy.git
