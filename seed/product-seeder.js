@@ -6,7 +6,7 @@ mongoose.connect('mongodb://localhost:27017/shopping', { useMongoClient: true })
 
 var products = [
   new Product({
-    imagePath: 'https://buildahead.com/wp-content/uploads/2017/02/happy-emoji-smaller.png',
+    imagePath: 'https://cdn.shopify.com/s/files/1/1061/1924/products/Emoji_Icon_-_Happy_large.png?v=1571606093',
     title: 'Happy',
     description: "Happy sticker!",
     price: 5.5
