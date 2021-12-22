@@ -1,5 +1,6 @@
 # Stickerfy
 
+The application can be found at https://stickerfy.herokuapp.com/
 
 ### Run the application locally
 
