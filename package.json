@@ -28,7 +28,7 @@
     "express-session": "^1.13.0",
     "express-validator": "^5.3.1",
     "fresh": "^0.5.2",
-    "hbs": "^4.0.4",
+    "hbs": "^4.1.1",
     "lodash": "^4.17.21",
     "mime": "^2.4.0",
     "mongoose": "^5.7.5",
