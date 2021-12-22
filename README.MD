@@ -5,7 +5,7 @@ The application can be found at https://stickerfy.herokuapp.com/
 ### Run the application locally
 
 #### Prerequisites
-You need [Node](https://nodejs.org/en/download/), [NPM](https://www.npmjs.com/get-npm) (which is bundled with Node) and [MongoDB](https://docs.mongodb.com/manual/installation/#mongodb-community-edition) properly installed before being able to run this application.
+You need [Node](https://nodejs.org/en/download/), [NPM](https://www.npmjs.com/get-npm) (which is bundled with Node) and [MongoDB Community Edition](https://docs.mongodb.com/manual/installation/#mongodb-community-edition) properly installed before being able to run this application.
 
 #### To get started:
 1. Clone this repository
