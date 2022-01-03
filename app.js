@@ -5,11 +5,13 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressHbs = require('express-handlebars');
+var {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
+var Handlebars = require('handlebars');
 var mongoose = require('mongoose');
 var session = require('express-session');
 var flash = require('connect-flash');
 var validator = require('express-validator');
-var MongoStore = require('connect-mongo')(session);
+var MongoStore = require('connect-mongo');
 
 var routes = require('./routes/index');
 
@@ -18,20 +20,19 @@ var app = express();
 mongoose.connect(process.env.MONGODB_URI);
 
 // view engine setup
-app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
+app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs', handlebars: allowInsecurePrototypeAccess(Handlebars)}));
 app.set('view engine', '.hbs');
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(validator());
 app.use(cookieParser());
 app.use(session({
   secret: 'mysupersecret',
   resave: false,
   saveUninitialized: false,
-  store: new MongoStore({ mongooseConnection: mongoose.connection }),
+  store: MongoStore.create({ mongoUrl: process.env.MONGODB_URI }),
   cookie: { maxAge: 180 * 60 * 1000 }
 }));
 app.use(flash());
