@@ -6,7 +6,11 @@ The application can be found at https://stickerfy.herokuapp.com/
 
 ### Prerequisites
 
-You need [Node](https://nodejs.org/en/download/), [NPM](https://www.npmjs.com/get-npm) (which is bundled with Node) and [MongoDB Community Edition](https://docs.mongodb.com/manual/installation/#mongodb-community-edition) properly installed before being able to run this application.
+You need the following properly installed before being able to run this application:
+
+- [Node](https://nodejs.org/en/download/)
+- [NPM](https://www.npmjs.com/get-npm) (which is bundled with Node)
+- [MongoDB Community Edition](https://docs.mongodb.com/manual/installation/#mongodb-community-edition)
 
 #### Get started
 
@@ -24,7 +28,7 @@ You need [Node](https://nodejs.org/en/download/), [NPM](https://www.npmjs.com/ge
 
 3. Set the MONGODB_URI environment variable
 
-On OSX I use the following command from my terminal.
+    On OSX I use the following command from my terminal. For other operating systems, set the environment variable with the correct syntax.
 
 ``` shell
     export MONGODB_URI=mongodb://localhost:27017/shopping
