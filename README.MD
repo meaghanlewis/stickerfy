@@ -28,15 +28,23 @@ You need the following properly installed before being able to run this applicat
 
 3. Set the MONGODB_URI environment variable
 
-    On OSX I use the following command from my terminal. For other operating systems, set the environment variable with the correct syntax.
+    On macOS/Linux use the following command from your terminal:
 
 ``` shell
     export MONGODB_URI=mongodb://localhost:27017/shopping
 ```
 
+    
+   On Windows, run:
+   
+   
+``` shell
+    set MONGODB_URI=mongodb://localhost:27017/shopping
+```
+   
 4. Start up MongoDB
 
-    Refer to [Run MongoDB Community Edition](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/#run-mongodb-community-edition) for the latest command to do that on your operating system. on OSX, I use the following command from my terminal.
+    Refer to [Run MongoDB Community Edition](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/#run-mongodb-community-edition) for the latest command to do that on your operating system. on macOS, I run this command from the terminal:
 
 ``` shell
     brew services start mongodb-community@5.0
