@@ -40,7 +40,7 @@
     "passport-local": "^1.0.0",
     "selenium-webdriver": "^4.3.1",
     "serve-favicon": "^2.5.0",
-    "stripe": "^4.7.0"
+    "stripe": "^11.1.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
