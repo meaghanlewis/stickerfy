@@ -44,10 +44,10 @@ You need the following properly installed before being able to run this applicat
    
 4. Start up MongoDB
 
-    Refer to [Run MongoDB Community Edition](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/#run-mongodb-community-edition) for the latest command to do that on your operating system. on macOS, I run this command from the terminal:
+    Refer to [Run MongoDB Community Edition](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/#run-mongodb-community-edition) for the latest command and version to use on your operating system. on macOS, I run this command from the terminal:
 
 ``` shell
-    brew services start mongodb-community@5.0
+    brew services start mongodb-community@6.0
 ```
 
 5. Populate shopping database
